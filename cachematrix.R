@@ -18,7 +18,7 @@
 #       - get a matrix: makeCacheMatrix$get()
 #       - set inverse of a matrix: makeCacheMatrix$setinverse()
 #       - get inverse of a matrix: makeCacheMatrix$getinverse()
-# makeCacheMatrix() returns a list of 4 functions
+# makeCacheMatrix(x) function returns a list of 4 functions
 # See examples in the Examples Section
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -39,7 +39,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # cacheSolve function checks if inverse exists and:
 #       - if not -- calculates and stores it
 #       - if yes -- retrives from cache while printing message
-# cacheSolve() function returns inverse matrix
+# cacheSolve(x) function returns a matrix that is inverse of x
 # See examples in the Examples section
 
 cacheSolve <- function(x, ...) {
