@@ -8,8 +8,7 @@
 #
 # Inverse is computed via  "solve()" function, assuming inverse of a matrix exists.
 #
-# The pair is meant to make use of cache to reduce CPU load and increase workload
-# of coder
+# The pair is meant to potentially reduce CPU load by making use of cache
 #
 ################################################################################
 
