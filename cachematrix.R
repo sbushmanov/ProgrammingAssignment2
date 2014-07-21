@@ -6,7 +6,7 @@
 # (2) cacheSolve: computes inverse of the matrix unless it already exists in cache
 # In this case inverse is retrieved from the cache. 
 #
-# Inverse is computed via # "solve" function, assuming inverse of a matrix exists.
+# Inverse is computed via  "solve()" function, assuming inverse of a matrix exists.
 #
 # The pair is meant to make use of cache to reduce CPU load and increase workload
 # of coder
@@ -18,6 +18,7 @@
 #       - get a matrix: makeCacheMatrix$get()
 #       - set inverse of a matrix: makeCacheMatrix$setinverse()
 #       - get inverse of a matrix: makeCacheMatrix$getinverse()
+# makeCacheMatrix() returns a list of 4 functions
 # See examples in the Examples Section
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -38,6 +39,7 @@ makeCacheMatrix <- function(x = matrix()) {
 # cacheSolve function checks if inverse exists and:
 #       - if not -- calculates and stores it
 #       - if yes -- retrives from cache while printing message
+# cacheSolve() function returns inverse matrix
 # See examples in the Examples section
 
 cacheSolve <- function(x, ...) {
